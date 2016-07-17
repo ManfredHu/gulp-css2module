@@ -8,6 +8,17 @@ See examples.It's Less to js module Demo
 `npm install` then `cd examples/`
 finally run `gulp`
 
+## background
+In the project we make single page SPA by using `location.hash` change to execute one module.So the original ` <head><link some css files></head> ` is no longer applicable.
+
+Because the CSS file is applied to the entire document, if use dynamic method to add CSS file, CSS file still exist in ` < head > < / head > ` after hash switch 
+
+Because there will be a click to jump to other modules, after come back, there may be some style influence each other. So in the React components import component part of the CSS, applied to components within such a CSS only.
+
+And within the components into the CSS string nor elegant way, we will made JS, CSS files separate module method to introduce.
+
+Therefore we need a plug-in. Realized from **Less->CSS->JS Module** process.
+
 ## author
 name: manfredhu/pphu
 email: manfredhu@gmail.com
