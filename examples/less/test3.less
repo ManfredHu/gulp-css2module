@@ -1,0 +1,15 @@
+@test3: #f938ab;
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow:         @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+.box {
+  color: saturate(@test3, 5%);
+  border-color: lighten(@test3, 30%);
+  background: #333; //这句表示文件3
+  div { .box-shadow(0 0 5px, 30%) }
+}

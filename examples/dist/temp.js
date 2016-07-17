@@ -1,0 +1,3 @@
+define('oneModule',function(){
+    .box{color:#fe33ac;border-color:#fdcdea;background:#111}.box div{-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);box-shadow:0 0 5px rgba(0,0,0,0.3)}.box{color:#fe33ac;border-color:#fdcdea;background:#222}.box div{-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);box-shadow:0 0 5px rgba(0,0,0,0.3)}.box{color:#fe33ac;border-color:#fdcdea;background:#333}.box div{-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);box-shadow:0 0 5px rgba(0,0,0,0.3)}
+});
