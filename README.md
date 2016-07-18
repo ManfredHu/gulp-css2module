@@ -76,11 +76,11 @@ gulp.task('less2module', function () {
 
 There are a few steps:
 
-1. gulp.src include the files.
-2. run less engine translate to css file and then concat all files.
-3. use css2module pass you template file name and replace to insert the code
-4. rename the file(may be css) to `.js`
-5. export the file to `dist` path
+1. Use `gulp.src` include the Less files.
+2. Run less engine translate to css files and then concat all files.
+3. Use **css2module** pass you template file name and replace to insert the code
+4. Rename the file(may be css) to `.js`
+5. Export the file to `dist` path
 
 ## License
 
