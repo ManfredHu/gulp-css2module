@@ -75,6 +75,7 @@ gulp.task('less2module', function () {
 **It is easy to modify this file to your own purpose.**
 
 There are a few steps:
+
 1. gulp.src include the files.
 2. run less engine translate to css file and then concat all files.
 3. use css2module pass you template file name and replace to insert the code
